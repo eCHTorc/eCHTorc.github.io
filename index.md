@@ -4,7 +4,6 @@
 
 <span style="display:block; margin-top:-20px;"> </span>
 
-
 <div style="text-align: left;">
   <h2>Online Research Community</h2>
 </div>
