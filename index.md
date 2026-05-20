@@ -1,6 +1,6 @@
 # electronic Computational Homotopy Theory (eCHT)
-## Online Research Community
-### Maintained by Dan Isaksen, Jesse Keyes, and JD Quigley
+<center> ## Online Research Community </center>
+<center> ### Maintained by Dan Isaksen, Jesse Keyes, and JD Quigley </center>
 
 The electronic Computational Homotopy Theory (eCHT) online research community sponsors a variety of activities related to research in pure mathematics, mostly in algebraic topology, homotopy theory, and related topics.  See the links below for more information about us:
 
