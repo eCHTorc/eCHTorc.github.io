@@ -2,6 +2,9 @@
   <h1> electronic Computational Homotopy Theory (eCHT) </h1>
 </div>
 
+<span style="display:block; margin-top:-20px;">This text will move up.</span>
+
+
 <div style="text-align: left;">
   <h2>Online Research Community</h2>
 </div>
