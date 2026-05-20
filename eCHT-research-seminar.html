@@ -1,3 +1,17 @@
+---
+title: "eCHT Research Seminar"
+layout: default
+---
+
+<main>
+  <header><h1>{{ include.title | default: page.title }}</h1></header>
+  <nav class="smooth">
+    {% for post in site.posts %}
+    <div><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y-%m-%d" }}</time><a href="{{ post.url | relative_url }}">{{ post.title }}</a></div>
+    {% endfor %}
+  </nav>
+</main>
+
 The electronic Computational Homotopy Theory Seminar is an online international research seminar. Topics include any part of homotopy theory that has a computational flavor, including but not limited to stable homotopy theory, unstable homotopy theory, chromatic homotopy theory, equivariant homotopy theory, motivic homotopy theory, and K-theory.
 
 In the 2025-2026 academic year, the seminar will meet about once per month.  During Fall 2025, the seminar meets on Thursdays from 10:00 am-11:45 am Eastern Time. The format is two 45-minute talks separated by a 15-minute coffee break.
