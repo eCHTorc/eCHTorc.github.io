@@ -1,4 +1,4 @@
-# electronic Computational Homotopy Theory
+# electronic Computational Homotopy Theory (eCHT)
 ## Online Research Community
 ### Maintained by Dan Isaksen, Jesse Keyes, and JD Quigley
 
