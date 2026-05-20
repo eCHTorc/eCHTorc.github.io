@@ -8,7 +8,7 @@
   <h2>Online Research Community</h2>
 </div>
 
-<span style="display:block; margin-top:-100em;"> </span>
+<span style="display:block; margin-top:-100em; margin-top: 5px; margin-bottom: 5px;"> </span>
 
 <div style="text-align: left;">
   <h3>Maintained by Dan Isaksen, Jesse Keyes, and JD Quigley</h3>
