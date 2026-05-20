@@ -6,3 +6,9 @@ theme: jekyll-theme-midnight
 description: 
 baseurl: /eCHTorc.github.io
 permalink: /eCHTorc.github.io
+
+show_sidebar: true            # show a sidebar instead of the usual header
+
+navigation:                     # accepts {file, title, url, icon, sidebaricon}
+  - {file: "who-we-are.md", sidebaricon: Who We Are}
+  - {file: "README.md", sidebaricon: address-card}
