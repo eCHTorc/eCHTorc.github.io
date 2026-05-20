@@ -1,3 +1,4 @@
 title = eCHT
 theme = jekyll-theme-architect
 description = Homebase for the electronic Computational Homotopy Theory online research community! 
+baseurl: "/eCHTorc.github.io"
