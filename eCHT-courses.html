@@ -1,1 +1,32 @@
+---
+layout: page
+---
+<h1> eCHT Courses </h1>
 
+<main>
+  <header><h1>{{ include.title | default: page.title }}</h1></header>
+  <nav class="smooth">
+    {% for post in site.posts %}
+    <div><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y-%m-%d" }}</time><a href="{{ post.url | relative_url }}">{{ post.title }}</a></div>
+    {% endfor %}
+  </nav>
+</main>
+
+Stable homotopy theory reading course
+
+Winter 2026
+Stable homotopy theory, instructor Kiran Luecke
+
+Winter 2025
+Stable homotopy theory, instructor David Mehrle
+
+Fall 2024
+Duality and spectra, instructor Sarah Petersen
+
+Winter 2024
+Algebraic topology: Homotopy theory, instructor Jack Carlisle
+Stable homotopy theory, instructor David Mehrle
+
+Winter 2023
+Algebraic topology: Homology and cohomology, instructor Sarah Petersen
+Topological K-theory, instructor Christy Hazel
