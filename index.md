@@ -16,4 +16,6 @@ The electronic Computational Homotopy Theory (eCHT) online research community sp
   <li> <a href="https://echtorc.github.io/eCHT-reading-seminars/"> eCHT Reading Seminars </a> </li>
 
   <li> <a href="https://echtorc.github.io/eCHT-research-workshops"> eCHT Research Workshops </a> </li>
+
+  <li> <a href="https://echtorc.github.io/eCHT-courses"> eCHT Courses </a> </li>
 </ul>
