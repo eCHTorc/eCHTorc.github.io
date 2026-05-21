@@ -1,1 +1,37 @@
+---
+layout: page
+---
+<h1> Stable Homotopy Theory Reading Course </h1>
 
+<main>
+  <header><h1>{{ include.title | default: page.title }}</h1></header>
+  <nav class="smooth">
+    {% for post in site.posts %}
+    <div><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y-%m-%d" }}</time><a href="{{ post.url | relative_url }}">{{ post.title }}</a></div>
+    {% endfor %}
+  </nav>
+</main>
+
+<p>
+With support from the eCHT Researching Training Group in the Mathematical Sciences grant from the National Science Foundation, <a href="davidmehrle.com"> David Mehrle </a> designed the curriculum for an online stable homotopy theory course. The course is suitable for mid-career PhD students who already have some first-year graduate level algebraic topology experience.
+</p>
+
+<p>
+The curriculum is meant to be completed by groups of students who are learning together. In principle, it can be used in a self-guided fashion, although the experience would probably be improved with the participation of a mentor who is already familiar with the mathematical content.
+</p>
+
+<p>
+The materials posted here include specific outlines for lectures. It is expected that participants will prepare, practice, and give presentations to each other on the course material. Homework problem sets and solutions are also provided.
+</p>
+
+<p>
+Here is the syllabus for the reading course, and here is a bundle of files containing the lecture outlines, problem sets, and solutions.
+</p>
+
+<p>
+This curriculum can serve as a template for other topics of interest to mid-career PhD students.
+</p>
+
+<p>
+We very much appreciate questions and feedback on this project. Contact Dan Isaksen or David Mehrle for more information.
+</p>
