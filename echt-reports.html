@@ -1,0 +1,19 @@
+---
+layout: page
+---
+<h1> eCHT Reports </h1>
+
+<main>
+  <header><h1>{{ include.title | default: page.title }}</h1></header>
+  <nav class="smooth">
+    {% for post in site.posts %}
+    <div><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y-%m-%d" }}</time><a href="{{ post.url | relative_url }}">{{ post.title }}</a></div>
+    {% endfor %}
+  </nav>
+</main>
+
+<a href="/files/report-year-1.pdf"> Report on Year 1: 8/1/2022-7/31/2023</a>
+
+<p>
+<a href="/files/report-year-2.pdf">Report on Year 2: 8/1/2023-7/31/2024</a>
+</p>
