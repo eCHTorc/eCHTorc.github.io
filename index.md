@@ -22,4 +22,6 @@ The electronic Computational Homotopy Theory (eCHT) online research community sp
   <li> <a href="https://echtorc.github.io/echt-minicourses"> eCHT Minicourses </a> </li>
 
   <li> <a href="https://echtorc.github.io/echt-research-experience-for-undergraduates-summer-24"> eCHT Research Experience for Undergraduates</a> </li>
+
+  <li> <a href="https://echtorc.github.io/echt-professional-development"> eCHT Professional Development Activities</a> </li>
 </ul>
