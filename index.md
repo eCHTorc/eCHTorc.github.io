@@ -4,6 +4,7 @@
   <h3> Maintained by <a href="https://isaksendan.github.io/"> Dan Isaksen</a>, <a href="https://sites.google.com/view/jkeyes"> Jesse Keyes</a>, and <a href="https://quigleyjd.github.io/"> JD Quigley</a> </h3>
 </div>
 
+<div style="margin-top: 0.5px; margin-bottom: 0.5px;">
 The electronic Computational Homotopy Theory (eCHT) online research community sponsors a variety of activities related to research in pure mathematics, mostly in algebraic topology, homotopy theory, and related topics.  See the links below for more information about us:
 
 <ul>
@@ -53,3 +54,5 @@ The eCHT research community is sponsored by a Research Training Grant (RTG) from
 <p>
 <a href="https://eldenelmanto.com/eakts-electronic-algebraic-k-theory-seminar/"> electronic Algebraic K-Theory Seminar (eAKTS)</a>
 </p>
+
+</div>
