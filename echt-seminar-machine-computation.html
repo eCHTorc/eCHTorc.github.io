@@ -1,1 +1,179 @@
+---
+layout: page
+---
+<h1> eCHT Seminar On Machine Computation In Homotopy Theory </h1>
 
+<main>
+  <header><h1>{{ include.title | default: page.title }}</h1></header>
+  <nav class="smooth">
+    {% for post in site.posts %}
+    <div><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y-%m-%d" }}</time><a href="{{ post.url | relative_url }}">{{ post.title }}</a></div>
+    {% endfor %}
+  </nav>
+</main>
+
+The electronic Computational Homotopy Theory (eCHT) research community is organizing a seminar on machine computation in homotopy theory. In the twenty-first century, the use of computers in pure mathematics continues to grow. This seminar will consider a variety of projects.
+
+<p>
+In the 2021-2022 academic year, the seminar will meet about once per month. The seminar meets on Thursdays at 11:30am-12:30pm eastern time.
+</p>
+
+<p>
+The organizer is <a href="https://isaksendan.github.io/"> Dan Isaksen</a> (Wayne State University).
+</p>
+
+<p>
+Recordings of previous talks are available on the <a href="https://www.youtube.com/playlist?list=PLS72SR9fUaRLgnvX1OkDHrs-dvDX2vgVy"> eCHT Youtube channel</a>.
+</p>
+
+<p>
+Please subscribe to our <a href="https://lists.wayne.edu/cgi-bin/wa?SUBED1=ECHT&A=1"> mailing list</a> to be kept informed of all eCHT news and events.
+</p>
+
+<p>
+See below for the schedule of talks, in reverse chronological order.
+</p>
+
+<hr>
+
+<strong> 14 April 2022 at 11:30 </strong>
+
+<p>
+<strong> Speaker: </strong> Eva Belmont, UC San Diego
+</p>
+
+<p>
+<strong> Title: </strong> <a href="https://www.youtube.com/watch?v=TMvCXgrHdxk"> Applications of Guozhen Wang’s MinimalResolution Ext resolver to the odd-primary Adams-Novikov spectral sequence</a>
+</p>
+
+<p>
+<strong> Abstract: </strong> Guozhen Wang’s MinimalResolution code computes Ext groups over BP_* BP and the C-motivic Steenrod algebra, and is amenable to adaptation to other Hopf algebroids. I will give an overview of what Wang’s code does and how it works. I will also talk about my work applying the resulting computer-generated Adams-Novikov E_2 data to (mostly painlessly) re-compute pi_n(S) at p=3 for n <= 108.
+</p>
+
+<hr>
+  
+<strong> 10 March 2022 at 11:30 </strong>
+
+<p>
+<strong> Speaker: </strong> Hood Chatham, UCLA
+</p>
+
+<p>
+<strong> Title: </strong> <a href="https://www.youtube.com/watch?v=FTczZCq0X7g"> A progress report on the spectral sequence software</a>
+</p>
+  
+<p>
+<strong> Abstract: </strong> Many homotopy theory research projects involve concrete spectral sequences and profit from visual communication with charts. These charts are helpful at many different stages of the research process: for investigating, for writing, and for speaking about math. They also have an important pedagogical role in improving the accessibility of existing knowledge.
+</p>
+  
+<p>
+I have been long interested in producing software that helps to enable the production and sharing of charts. My goal is to create a toolkit for producing and editing diagrams which can be displayed as an interactive webpage or rendered into a latex diagram. Such software should be as accessible as possible, meaning that it should be easy to install, easy to run, and easy to learn how to use.
+</p>
+  
+<p>
+I will describe where I think we are now and where I think we are going.
+</p>
+  
+<p>
+This is joint work with Dexter Chua (but these are my personal opinions and have not been endorsed by Dexter).
+</p>
+
+<hr>
+  
+<strong> 17 February 2022 at 11:30 </strong>
+
+<p>
+<strong> Speaker: </strong> Weinan Lin, Peking University
+</p>
+  
+<p>
+<strong> Title: </strong> <a href="https://www.youtube.com/watch?v=ho7i0gfYelg"> Efficient algorithms with DGAs and their applications to the May spectral sequence</a>
+</p>
+  
+<p>
+<strong> Abstract: </strong> Given a fixed number of generators for a DGA, if there are fewer relations among them, the DGA tends to be larger as a vector space. The extreme cases are polynomial DGAs and DGAs with trivial products. To compute the homology efficiently, one may need to use different algorithms depending on the number of relations. In this talk, I will demonstrate several algorithms I use in my computation of the May spectral sequence over F_2. Most of the algorithms rely on the theory of Groebner bases. I will give an introduction to Groebner bases before the algorithms.
+</p>
+
+<hr>
+  
+<strong> 3 February 2022 at 11:30 </strong>
+
+<p>
+<strong> Speaker: </strong> Dexter Chua, Harvard University
+</p>
+  
+<p>
+<strong> Title: </strong> <a href="https://www.youtube.com/watch?v=0n9oCoyGEEo"> The secondary Steenrod algebra</a>
+</p>
+  
+<p>
+<strong> Abstract: </strong> In the early 2000’s, Baues introduced and computed the secondary Steenrod algebra, which in turn gives a computer algorithm to compute all Adams d2 differentials. In this talk, I will give a modern reformulation of these results, and explain how this can be used to compute new (and longer!) differentials in the Adams spectral sequence.
+</p>
+  
+<hr>
+  
+<strong> 9 December 2021 at 11:30
+
+<p>
+<strong> Speaker: </strong> Stephen McKean, Duke University
+</p>
+  
+<p>
+<strong> Title: </strong> Commutative algebraic formulas for the A^1-degree
+</p>
+  
+<p>
+<strong> Abstract: </strong> The A^1-degree is an analog of the Brouwer degree in motivic homotopy theory. Over a field k, the A^1-degree takes values in isomorphism classes of quadratic forms over k. In this talk, I will describe joint work with Thomas Brazelton and Sabrina Pauli that gives a complete formula for the A^1-degree in terms of commutative algebra. I will then discuss how we implemented this formula in Sage, demonstrate the code with examples from enumerative geometry, and detail parts of the code that could be improved.
+</p>
+
+<hr>
+  
+<strong> 28 October 2021 at 11:30 </strong>
+  
+<p>
+<strong> Speaker: </strong> Christian Nassau
+</p>
+  
+<p>
+<strong> Title: </strong> <a href="https://www.youtube.com/watch?v=UMAKMVqe-eE"> Steenrod algebra cohomology with Yacop/Sage</a>
+</p>
+  
+<p>
+<a href="https://nullhomotopie.de/eCHT2021/"> Presentation slides</a>
+</p>
+  
+<p>
+<strong> Abstract: </strong> We showcase a cohomology package <a href="https://github.com/cnassau/yacop-sage"> (github.com/cnassau/yacop-sage)</a> for the SageMath computer algebra system that has been in incubation since 2009 (and is currently in a state of mild disrepair).  We’ll try to make this talk interesting for both technically minded programmers and homotopy theorists that are looking for tools to help with specific computations.
+</p>
+
+<hr>
+  
+<strong> 30 September 2021 at 11:30 </strong>
+
+<p>
+<strong> Speaker: </strong> Robert Bruner, Wayne State University
+</p>
+  
+<p>
+<strong> Title: </strong> <a href="https://www.youtube.com/watch?v=YzT4wIDpX_U"> ext and its uses</a>
+</p>
+  
+<p>
+<strong> Abstract: </strong> The author’s package ‘ext’ of C-programs and Unix shell scripts has been used to compute Ext_A(F2, F2) through internal degree 184 together with all products and certain Massey products, and to give sufficiently precise descriptions of Ext_A(2)(H^* X, F2) to compute tmf_*(X), for several X, including the cofibers of 2, eta and nu. Finally, it very quickly gives initial segments of the E_2 term of the Adams spectral sequence for many spectra, together with chain maps lifting any cocycle.
+</p>
+  
+<p>
+The talk will describe some of these calculations and demonstrate them in action.
+</p>
+  
+<p>
+<a href="https://www.youtube.com/watch?v=46CrqxxjWi0"> ext demonstration part 1</a>
+</p>
+  
+<p>  
+<a href="https://www.youtube.com/watch?v=YuZ3UVlb2kI"> ext demonstration part 2</a>
+</p>
+  
+<p>  
+<a href="https://www.youtube.com/watch?v=ZEcGfC7DUJQ"> ext demonstration part 3</a>
+</p>
