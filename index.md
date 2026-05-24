@@ -1,4 +1,4 @@
-<div style="text-align: left; margin-top: 1px; margin-bottom: 1px;">
+<div style="text-align: left; margin-top: 1px; margin-bottom: 0.75px;">
   <h1> electronic Computational Homotopy Theory (eCHT) </h1>
   <h2> Online Research Community </h2>
   <h3> Maintained by <a href="https://isaksendan.github.io/"> Dan Isaksen</a>, <a href="https://sites.google.com/view/jkeyes"> Jesse Keyes</a>, and <a href="https://quigleyjd.github.io/"> JD Quigley</a> </h3>
