@@ -35,6 +35,7 @@ external:                       # accepts {file, title, url, icon, sidebaricon}
   - {title: Seminar on Machine Computation, url: "https://echtorc.github.io/echt-seminar-machine-computation"}
   - {title: Code of Conduct, url: "https://echtorc.github.io/echt-code-of-conduct/"}
   - {title: Reports, url: "https://echtorc.github.io/echt-reports/"}
+  - {title: Youtube, url: "https://www.youtube.com/user/dcisaksen/videos"}
 
 plugins:
  - jekyll-feed
