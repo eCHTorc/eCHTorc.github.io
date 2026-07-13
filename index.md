@@ -1,4 +1,4 @@
-<div style="text-align: left; margin-top: 1px; margin-bottom: 0.25px;">
+<div style="text-align: left; margin-top: 1px; margin-bottom: 0px;">
   <h1> electronic Computational Homotopy Theory (eCHT) </h1>
   <h2> Online Research Community </h2>
 </div>
