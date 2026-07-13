@@ -22,7 +22,7 @@ navigation:                     # accepts {file, title, url, icon, sidebaricon}
   - {title: eCHT, url: "https://echtorc.github.io/"}
 
 external:                       # accepts {file, title, url, icon, sidebaricon}
-  - {title: Mail, url: "mailto:jessekeyes2@gmail.com"}
+  - {title: Mail, url: "mailto:echtadmin@gmail.com"}
   - {title: Who we are, url: "https://echtorc.github.io/who-we-are/"}
   - {title: Research Seminar, url: "https://echtorc.github.io/echt-research-seminar"}
   - {title: Research Seminar Reading Group, url: "https://echtorc.github.io/echt-research-seminar-reading-group"}
