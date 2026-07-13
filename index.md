@@ -3,7 +3,7 @@
   <h2> Online Research Community </h2>
 </div>
 
-<div style="margin-top: 0.5px; margin-bottom: 0.5px;">
+<div style="margin-top: 0px; margin-bottom: 0.5px;">
 The electronic Computational Homotopy Theory (eCHT) online research community sponsors a variety of activities related to research in pure mathematics, mostly in algebraic topology, homotopy theory, and related topics.
 
 Please subscribe to our <a href="https://lists.wayne.edu/cgi-bin/wa?SUBED1=ECHT&A=1"> mailing list</a> to be kept informed of all eCHT news and events.  We also have a unified <a href="https://calendar.google.com/calendar/u/0/r?cid=YzExNjJhODRmMGY0YTZjZmFlMTViMmFjZWQ4NWZiM2I0NTU2MDQxM2YzMTI0YjA3OGMyYWQ5YWYyMDE2ZmYxZUBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&pli=1"> calendar</a> of our events and activities.
