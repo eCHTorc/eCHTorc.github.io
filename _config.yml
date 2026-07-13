@@ -22,8 +22,17 @@ navigation:                     # accepts {file, title, url, icon, sidebaricon}
   - {title: eCHT, url: "https://echtorc.github.io/"}
 
 external:                       # accepts {file, title, url, icon, sidebaricon}
-  - {title: Mail, icon: envelope, url: "mailto:jessekeyes2@gmail.com"}
-  - {title: Github, icon: github, url: "https://github.com/eCHTorc"}
+  - {title: Mail, url: "mailto:jessekeyes2@gmail.com"}
+  - {title: Who we are, url: "https://echtorc.github.io/who-we-are/"}
+  - {title: Research Seminar, url: "https://echtorc.github.io/echt-research-seminar"}
+  - {title: Research Seminar Reading Group, url: "https://echtorc.github.io/echt-research-seminar-reading-group"}
+  - {title: Reading Seminars, url: "https://echtorc.github.io/echt-reading-seminars"}
+  - {title: Research Workshops, url: "https://echtorc.github.io/echt-research-workshops"}
+  - {title: Courses, url: "https://echtorc.github.io/echt-courses"}
+  - {title: Minicourses, url: "https://echtorc.github.io/echt-minicourses"}
+  - {title: REU, url: "https://echtorc.github.io/echt-research-experience-for-undergraduates-summer-24"}
+  - {title: Professional Development Activities, url: "https://echtorc.github.io/echt-professional-development"}
+  - {title: Seminar on Machine Computation, url: "https://echtorc.github.io/echt-seminar-machine-computation"}
 
 plugins:
  - jekyll-feed
