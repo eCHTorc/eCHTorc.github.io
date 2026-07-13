@@ -33,6 +33,8 @@ external:                       # accepts {file, title, url, icon, sidebaricon}
   - {title: REU, url: "https://echtorc.github.io/echt-research-experience-for-undergraduates-summer-24"}
   - {title: Professional Development Activities, url: "https://echtorc.github.io/echt-professional-development"}
   - {title: Seminar on Machine Computation, url: "https://echtorc.github.io/echt-seminar-machine-computation"}
+  - {title: Code of Conduct, url: "https://echtorc.github.io/echt-code-of-conduct/"}
+  - {title: Reports, url: "https://echtorc.github.io/echt-reports/"}
 
 plugins:
  - jekyll-feed
