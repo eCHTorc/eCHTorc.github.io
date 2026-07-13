@@ -9,14 +9,6 @@ The electronic Computational Homotopy Theory (eCHT) online research community sp
 Please subscribe to our <a href="https://lists.wayne.edu/cgi-bin/wa?SUBED1=ECHT&A=1"> mailing list</a> to be kept informed of all eCHT news and events.  We also have a unified <a href="https://calendar.google.com/calendar/u/0/r?cid=YzExNjJhODRmMGY0YTZjZmFlMTViMmFjZWQ4NWZiM2I0NTU2MDQxM2YzMTI0YjA3OGMyYWQ5YWYyMDE2ZmYxZUBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&pli=1"> calendar</a> of our events and activities.
 
 <p>
-<a href="https://echtorc.github.io/echt-code-of-conduct/"> eCHT Code of Conduct</a>
-</p>
-
-<p>
-<a href="https://echtorc.github.io/echt-reports/"> eCHT Reports</a>
-</p>
-
-<p>
 The eCHT research community is sponsored by a Research Training Grant (RTG) from the National Science Foundation (NSF), as well as by the <a href="https://zulip.com/"> Zulip</a> chat app. For more information, contact <a href="https://isaksendan.github.io/"> Dan Isaksen</a> at isaksen@wayne.edu.
 </p>
 
