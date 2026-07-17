@@ -17,14 +17,6 @@ The eCHT research community is sponsored by a Research Training Grant (RTG) from
 </p>
 
 <p>
-<a href="https://sites.google.com/view/jmra/"> Junior Mathematician Research Archive (JMRA)</a>
-</p>
-
-<p>
-<a href="https://eldenelmanto.com/eakts-electronic-algebraic-k-theory-seminar/"> electronic Algebraic K-Theory Seminar (eAKTS)</a>
-</p>
-
-<p>
 <a href="https://www.aatrn.net/"> Applied Algebraic Topology Research Network (AATRN)</a>
 </p>
 
