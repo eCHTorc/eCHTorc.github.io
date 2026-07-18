@@ -20,5 +20,5 @@ The eCHT research community was sponsored by a Research Training Grant (RTG) fro
 <a href="https://www.aatrn.net/"> Applied Algebraic Topology Research Network (AATRN)</a>
 </p>
 
-<h4> Maintained by <a href="https://isaksendan.github.io/"> Dan Isaksen</a>, <a href="https://sites.google.com/view/jkeyes"> Jesse Keyes</a>, and <a href="https://quigleyjd.github.io/"> JD Quigley</a> </h4>
+<h4> Special thanks to <a href="https://sites.google.com/view/jkeyes"> Jesse Keyes</a> for building this website.  It was last updated in July 2026.</a></h4>
 </div>
