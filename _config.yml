@@ -36,6 +36,6 @@ external:                       # accepts {file, title, url, icon, sidebaricon}
   - {title: Code of Conduct, url: "https://echtorc.github.io/echt-code-of-conduct/"}
   - {title: Reports, url: "https://echtorc.github.io/echt-reports/"}
   - {title: Youtube, url: "https://www.youtube.com/user/dcisaksen/videos"}
-
+  - {title: Dormant Activities, url: "https://echtorc.github.io/echt-dormant-activities/"}
 plugins:
  - jekyll-feed

@@ -1,0 +1,36 @@
+---
+layout: page
+---
+<h1> eCHT Dormant Activities </h1>
+
+<main>
+  <header><h1>{{ include.title | default: page.title }}</h1></header>
+  <nav class="smooth">
+    {% for post in site.posts %}
+    <div><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y-%m-%d" }}</time><a href="{{ post.url | relative_url }}">{{ post.title }}</a></div>
+    {% endfor %}
+  </nav>
+</main>
+
+This page contains links to past eCHT activities that are no longer active.
+
+
+<p>
+<a href="https://echtorc.github.io/echt-research-seminar-reading-group"> Research Seminar Reading Group </a>
+</p>
+
+<p>
+<a href="https://echtorc.github.io/echt-research-workshops"> Research Workshops </a>
+</p>
+
+<p>
+<a href="https://echtorc.github.io/echt-research-experience-for-undergraduates-summer-24"> Research Experience for Undergraduates (REU) </a>
+</p>
+
+<p>
+<a href="https://echtorc.github.io/echt-professional-development"> Professional Development Activities </a>
+</p>
+
+<p>
+<a href="https://echtorc.github.io/echt-seminar-machine-computation"> Seminar on Machine Computation</a>
+</p>
