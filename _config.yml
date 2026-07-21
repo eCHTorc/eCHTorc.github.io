@@ -31,6 +31,7 @@ external:                       # accepts {file, title, url, icon, sidebaricon}
   - {title: Reports, url: "https://echtorc.github.io/echt-reports/"}
   - {title: Youtube, url: "https://www.youtube.com/user/dcisaksen/videos"}
   - {title: Dormant Activities, url: "https://echtorc.github.io/echt-dormant-activities/"}
+  - {title: Zulip Chat, url: "https://echt.zulipchat.com/"}
   - {title: Mail, url: "mailto:echtadmin@gmail.com"}
 plugins:
  - jekyll-feed
