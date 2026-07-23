@@ -21,6 +21,15 @@ The eCHT research community was sponsored by a Research Training Grant (RTG) fro
 </p>
 
 <p>
+<a href="https://hottest-seminar.github.io/"> Homotopy Type Theory Electronic Seminar Talks (HoTTEST)</a>
+</p>
+
+<p>
+<a href="https://olsume.org/"> 
+Online Seminar on Undergraduate Mathematics Education (OLSUME)</a>
+</p>
+
+<p>
 Special thanks to <a href="https://sites.google.com/view/jkeyes"> Jesse Keyes</a> for building this website.  It was last updated in July 2026.
 </p>
 </div>
