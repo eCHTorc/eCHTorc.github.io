@@ -30,6 +30,6 @@ Online Seminar on Undergraduate Mathematics Education (OLSUME)</a>
 </p>
 
 <p>
-Special thanks to <a href="https://sites.google.com/view/jkeyes"> Jesse Keyes</a> for building this website.  It was last updated in July 2026.
+Special thanks to <a href="https://sites.google.com/view/jkeyes"> Jesse Keyes</a> for building this website.  It was last updated in August 2026.
 </p>
 </div>
