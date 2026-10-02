@@ -1,23 +1,41 @@
-<!DOCTYPE html>
-<html lang="{{ page.lang | default: site.lang }}">
+---
+layout: compress
+---
 
-{% include head.html %}
+{% include base_path %}
 
-<header class="hover smooth">
-  {% unless site.show_minimal and site.navigation and site.external %}
-    <h1 {% if site.navigation and site.external %}class="full"{% endif %}><a href="{{ "/" | relative_url }}">{{ site.title | escape }}</a></h1>
-  {% endunless %}
-  {% include menu.html menu=site.navigation %}
-  {% include menu.html menu=site.external %}
-</header>
+<!doctype html>
+<html lang="{{ site.locale | slice: 0,2 }}" class="no-js"{% if site.site_theme == "dark" %} data-theme="dark"{% endif %}>
 
-{{ content }}
+  <head>
+    {% include head.html %}
+    {% include head/custom.html %}
 
-{%- if site.footer -%}
-<footer class="hover">
-  <div>{{ site.description }}</div>
-  {% include menu.html menu=site.footer %}
-</footer>
-{%- endif -%}
+    <link rel="icon" type="image/png" href="{{ site.baseurl }}/images/favicon.ico">
+   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+   <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+   <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+   <link rel="icon" type="image/png" sizes="192x192" href="/images/favicon-192x192.png">
+   <link rel="icon" type="image/png" sizes="512x512" href="/images/favicon-512x512.png">
+   <link rel="manifest" href="/images/site.webmanifest">
 
+  </head>
+
+  <body>
+    
+    {% include browser-upgrade.html %}
+    {% include sidebar.html %}
+
+    {{ content }}
+
+    <div class="page__footer">
+      <footer>
+        {% include footer/custom.html %}
+        {% include footer.html %}
+      </footer>
+    </div>
+
+    {% include scripts.html %}
+
+  </body>
 </html>

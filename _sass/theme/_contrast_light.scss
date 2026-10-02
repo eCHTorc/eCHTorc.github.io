@@ -1,0 +1,104 @@
+/* ==========================================================================
+   CONTRAST THEME - LIGHT VERSION
+   ========================================================================== */
+/* Color codes used for the theme */
+$primary-color              : #6b8e7d;
+$dark-primary-color         : mix(#000, $primary-color, 40%);
+$darker-primary-color       : mix(#000, $primary-color, 60%);
+$light-primary-color        : mix(#fff, $primary-color, 50%);
+$lighter-primary-color      : mix(#fff, $primary-color, 90%);
+$background                 : #f8f9fa;
+$background-light           : #f8f9fa;
+$background-lighter        : #ffffff;
+$text                      : #2c3531;
+$text-muted                : #6b7280;
+$link                      : #4a6fa5;
+$link-dark                 : mix(#000, $link, 50%);
+$link-light                : mix(#fff, $link, 50%);
+$footer                    : #edf0ee;
+$border                    : #d1d5db;
+$border-dark               : #9ca3af;
+$selection-bg              : #d2e4db;
+$selection-text            : #111827;
+
+$footer-bottom-bg          : #343a40;
+$footer-bottom-text        : #adb5bd;
+$footer-bottom-link-hover  : #ffffff;
+
+/* Color codes used for the site */
+$danger-color               : #ff0000;
+$info-color                 : #0000ff;
+$notice-color               : #000000;
+$success-color              : #008000;
+$warning-color              : #ff8800;
+
+/* Other basic settings for the template */
+$border-radius              : 4px;
+$box-shadow                 : 0 1px 1px rgba(0, 0, 0, 0.125);
+$global-transition          : all 0.2s ease-in-out;
+$masthead-height            : 70px;
+$navicon-width              : 28px;
+$navicon-height             : 4px;
+$sidebar-link-max-width     : 250px;
+$sidebar-screen-min-width   : 1024px;
+
+/* Light theme for the site */
+:root {
+  --global-base-color                 : #{$primary-color};
+  --global-bg-color                   : #{$background};
+  --global-footer-bg-color            : #{$footer};
+  --global-border-color               : #{$border};
+  --global-dark-border-color          : #{$border-dark};
+  --global-code-background-color      : #{$background-light};
+  --global-code-text-color            : #{$text};
+  --global-fig-caption-color          : #{$text-muted};
+  --global-link-color                 : #{$link};
+  --global-link-color-hover           : #{$link-dark};
+  --global-link-color-visited         : #{$primary-color};
+  --global-masthead-color             : #{$primary-color};
+  --global-masthead-link-color        : #{$text};
+  --global-masthead-link-color-hover  : #{$border};
+  --global-text-color                 : #{$text};
+  --global-text-color-light           : #{$text-muted};
+  --global-thead-color                : #{$border};
+  --global-toc-bg-color               : #{$background-light};
+  --global-selection-bg-color         : #{$selection-bg};
+  --global-selection-text-color       : #{$selection-text};
+  --footer-text-color                 : #{$text-muted};
+  --footer-link-color                 : #{$text-muted};
+  --footer-link-color-hover           : #{$link};
+}
+
+/* Text selection styling for light theme */
+::selection {
+  background-color: var(--global-selection-bg-color);
+  color: var(--global-selection-text-color);
+}
+
+::-moz-selection {
+  background-color: var(--global-selection-bg-color);
+  color: var(--global-selection-text-color);
+}
+
+/* Override notice colors for high contrast */
+.page__content {
+  .notice,
+  .notice--primary,
+  .notice--info,
+  .notice--warning,
+  .notice--success,
+  .notice--danger {
+    color: #{$text};
+    border-color: #{$text};
+  }
+}
+
+html:not([data-theme="dark"]) footer {
+  color: #000000;
+}
+
+// Do not change the color of the social icons in the feed icons
+.page__footer-follow .social-icons i:not(.fa-rss-square),
+.page__footer-follow .social-icons .svg-inline--fa:not(.fa-rss-square) {
+  color: inherit;
+}

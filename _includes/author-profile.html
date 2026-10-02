@@ -1,0 +1,21 @@
+{% include base_path %}
+
+{% if page.author and site.data.authors[page.author] %}
+  {% assign author = site.data.authors[page.author] %}{% else %}{% assign author = site.author %}
+{% endif %}
+
+<div itemscope itemtype="http://schema.org/Person">
+
+  <div class="author__avatar">
+<a href="{{ '/' | relative_url }}">
+    	<img src="/images/echt.png" class="author__avatar" alt="{{ author.name }}"  fetchpriority="high" style="border: none; box-shadow: none; border-radius: 0;"/>
+</a>
+  </div>
+
+  <div class="author__content">
+    <h3 class="author__name">{{ author.name }}</h3>
+    {% if author.pronouns %}<p class="author__pronouns">{{ author.pronouns }}</p>{% endif %}
+    {% if author.bio %}<p class="author__bio">{{ author.bio }}</p>{% endif %}
+  </div>
+
+</div>

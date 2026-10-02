@@ -1,0 +1,112 @@
+/* ==========================================================================
+   TABLES
+   ========================================================================== */
+
+table {
+  margin-bottom: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  font-family: $global-font-family;
+  font-size: $type-size-6;
+  border-collapse: collapse;
+  border: none;
+  border-top: 1px solid var(--global-border-color);
+  // border: 1px solid var(--global-border-color);
+
+  & + table {
+    margin-top: 1em;
+  }
+}
+
+thead {
+  background-color: none;
+  #background-color: var(--global-border-color);
+  border-bottom: 1px solid var(--global-border-color);
+}
+
+th {
+  padding: 0.5em;
+  font-weight: bold;
+  text-align: left;
+  border-right: none;
+  // border-right: 1px solid var(--global-border-color);
+}
+
+td {
+  padding: 0.5em;
+  border-bottom: 1px dashed var(--global-border-color);
+  border-right: none;
+  # border-bottom: 1px solid var(--global-border-color);
+  # border-right: 1px solid var(--global-border-color);
+}
+
+tr, td, th {
+  vertical-align: middle;
+}
+
+/* ==========================================================================
+   TALK STYLE
+   ========================================================================== */
+
+table.talk-table {
+    width: 100%;
+    margin-bottom: 0em;
+    border-collapse: collapse;
+    border: none;
+    border-top: none;
+  }
+  table.talk-table tr {
+    background: transparent;
+    border: none;
+  }
+  table.talk-table td {
+    border: none;
+    border-bottom: none;
+    padding: 0;
+  }
+  table.talk-table td.talk-title {
+    text-align: left;
+    font-size: 1.3em;
+    font-color: var(--global-text-color);
+    line-height: 1.5;
+    padding-right: 1em;
+  }
+  table.talk-table td.talk-date {
+    text-align: right;
+    vertical-align: top;
+    font-size: 1em;
+    font-color: var(--global-text-color-light);
+    white-space: nowrap;
+  }
+
+ .abstract-box {
+      background-color: var(--global-footer-bg-color);
+      border: 1px solid var(--global-border-color); 
+      border-radius: 1em;   
+      padding: 1em 1.2em;                   
+      margin-top: 1em;                      
+      margin-bottom: 1.2em;                  
+    }
+
+/* ==========================================================================
+   TWO COLUMN LAYOUT
+   ========================================================================== */
+
+.mini-columns {
+  display: flex;
+  gap: 20px;         
+  margin: 0em 0;      
+  width: 100%;
+
+  .column {
+    flex: 1;          /* Forces both columns to take up equal width (50% each) */
+    min-width: 0;     /* Prevents long code blocks or words from breaking the layout */
+  }
+
+  /* Responsive Fix: Stacks them vertically on small mobile phone screens */
+  @media (max-width: 600px) {
+    flex-direction: column;
+    gap: 15px;
+  }
+}

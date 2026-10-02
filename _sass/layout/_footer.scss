@@ -1,0 +1,169 @@
+/* ==========================================================================
+   FOOTER
+   ========================================================================== */
+
+.custom-footer-text {
+  position: relative;
+  margin-top: 0;
+  font-size: 0.5em;
+}
+
+.page__footer {
+  @include clearfix;
+  background: var(--global-footer-bg-color);
+  position: relative;
+  overflow: hidden;
+
+  color: var(--global-text-color-light);
+
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 3em;
+  width: 100%;
+  clear: both;
+  height: auto;
+
+  /* --- Desktop Layout--- */
+  @media screen and (min-width: $sidebar-screen-min-width) {
+    // 1. Shift the footer to the right slightly
+    @include prefix(0.25 of 12); 
+    
+    // 2. Reduce the width of the footer
+    @include span(10.06 of 12 last); 
+    
+    // 3. Clear floats to ensure it stays beneath the main content column
+    clear: both; 
+  }
+
+  -webkit-animation: intro 0.3s both;
+          animation: intro 0.3s both;
+  -webkit-animation-delay: 0.45s;
+          animation-delay: 0.45s;
+  border-top: 1px solid var(--global-dark-border-color);
+
+  footer {
+    @include clearfix;
+    padding: 1rem 0.8rem 0.8rem 0.2rem;
+    width: 100%;
+
+    @include breakpoint($x-large) {
+      max-width: $x-large;
+    }
+  }
+
+  .footer__container {
+    width: 100%;
+    max-width: 1140px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr; // Mobile-first: single column
+    gap: 2rem;
+
+    @media (min-width: 768px) {
+      grid-template-columns: 1.5fr 1fr 1fr; // 3 columns side-by-side on tablet/desktop
+      gap: 3rem;
+    }
+  }
+
+.footer__heading {
+    font-size: var(--type-size-7);
+    font-weight: 600;
+    color: var(--footer-text-color);
+    margin-top: 0;
+    margin-bottom: 1rem;
+  }
+
+  .footer__links {
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    li {
+      font-size: 0.8em;
+      margin-bottom: 0.3rem;
+    }
+  }
+
+  .footer__brand {
+    p {
+      margin: 1rem 0 0 0;
+      font-size: 0.9rem;
+      line-height: 1.6;
+    }
+
+    .logo {
+      width: 150px;
+      fill: var(--global-text-color-light);
+    }
+  }
+
+  a {
+    color: var(--footer-link-color);
+    text-decoration: none;
+    transition: color 0.2s ease;
+
+    &:hover {
+      color: var(--footer-link-color-hover);
+      text-decoration: underline;
+    }
+  }
+
+  .fas,
+  .fab,
+  .far,
+  .fal {
+    color: var(--global-text-color-light);
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -120px;
+    left: 0;
+    width: 100%;
+    height: 120px;
+    background: var(--global-footer-bg-color);
+    pointer-events: none;
+  }
+}
+
+.page__footer-copyright {
+  font-family: $global-font-family;
+  font-size: $type-size-7;
+}
+
+.page__footer-follow {
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+
+  li {
+    display: inline-block;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-family: $sans-serif-narrow;
+    font-size: $type-size-6;
+    text-transform: uppercase;
+  }
+
+  li + li:before {
+    content: "";
+    padding-right: 5px;
+  }
+
+  a {
+    padding-right: 10px;
+    font-weight: bold;
+  }
+
+  .social-icons {
+    a {
+      white-space: nowrap;
+    }
+  }
+}
