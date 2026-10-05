@@ -35,9 +35,9 @@ The template has been heavily edited for this website, but the basic contents of
 
 9. files contains all the pdfs that are linked in the website, e.g. talk notes and slides.
 
-10. Gemfile and Gemfile.lock are there to help you run the site locally.
+10. Gemfile and Gemfile.lock are there to help you run the site locally with Jekyll.
 
-11. images contains all the images used on the website, e.g. the logo.
+11. images contains all the images used on the website, e.g. the logo and favicon.
 
 12. index.md is the markdown file for the homepage of the website.
 
@@ -88,7 +88,7 @@ If you want to change the aesthetics of the website, or add new elements, there 
 
 Here are the most basic things you might want to edit:
 
-- Colors, fonts, etc: Go to _sass. The files _syntax.scss and _themes.scss govern things like typography. If you go to the folder theme, you'll find different scss files that govern the colors for the website. Currently the only one that's used is _contrast_light. There is an option to make dark mode for the website (see the masthead files) but it's not currently in use. 
+- Colors, fonts, etc: Go to _sass. The files _syntax.scss and _themes.scss govern things like typography. If you go to the folder theme, you'll find different scss files that govern the colors for the website. Currently the one that's used is _contrast (both light and dark, depending on what the user's computer dictates. There is an option to make light/dark mode "toggle" (see the masthead files) but it's not currently in use). 
 
 - Buttons, lists, the sidebar menu, footer, etc: Go to _sass > layout. The files in here govern how specific elements of the website look. For example, say you wanted to change what happens when you hover over a link in the sidebar. You should go to the file _navigation.scss (it might be worth looking in _sidebar.scss as well) and edit the code in the "Navigation list" section.
 
