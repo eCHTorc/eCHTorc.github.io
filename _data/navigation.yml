@@ -1,0 +1,31 @@
+# The following is the order of the links in the header of the website.
+#
+# Changing the order here will adjust the order and you can also add additional
+# links. Removing a link prevents it from showing in the header, but does not
+# prevent it from being included in the site.
+#
+
+main:
+
+#  - title: "Research seminar"
+#    url: /research-seminar/ 
+
+left_nav:
+  - title: "Seminars and Courses"
+    children:
+      - title: "Research seminar"
+        url: /research-seminar/ 
+      - title: "Reading seminars"
+        url: /reading-seminars/ 
+      - title: "Courses"
+        url: /courses/ 
+      - title: "Minicourses"
+        url: /minicourses/ 
+  - title: "More"
+    children:
+      - title: "About us"
+        url: /who-we-are/ 
+      - title: "Code of conduct"
+        url: /code-of-conduct/ 
+      - title: "Dormant activities"
+        url: /dormant-activities/ 
