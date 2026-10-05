@@ -55,6 +55,9 @@
 <loc>http://localhost:4000/research-seminar-reading-group/</loc>
 </url>
 <url>
+<loc>http://localhost:4000/echt-research-seminar/</loc>
+</url>
+<url>
 <loc>http://localhost:4000/research-seminar/</loc>
 </url>
 <url>
@@ -208,6 +211,10 @@
 <url>
 <loc>http://localhost:4000/files/bergner-4.pdf</loc>
 <lastmod>2026-09-16T12:18:26+00:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/files/calle-prime-ideals.pdf</loc>
+<lastmod>2026-10-02T08:02:11+00:00</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/files/carrick-thesis.pdf</loc>

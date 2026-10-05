@@ -42,6 +42,8 @@ $navicon-height             : 4px;
 $sidebar-link-max-width     : 250px;
 $sidebar-screen-min-width   : 1024px;
 
+$logo-image-path          : "/images/echt_light.png";
+
 /* Light theme for the site */
 :root {
   --global-base-color                 : #{$primary-color};
@@ -67,6 +69,7 @@ $sidebar-screen-min-width   : 1024px;
   --footer-text-color                 : #{$text-muted};
   --footer-link-color                 : #{$text-muted};
   --footer-link-color-hover           : #{$link};
+  --global-logo-image                 : #{"url('" + $logo-image-path + "')"};
 }
 
 /* Text selection styling for light theme */

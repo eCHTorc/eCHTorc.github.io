@@ -7,28 +7,21 @@ $dark-primary-color         : mix(#000, $primary-color, 25%);
 $darker-primary-color       : mix(#000, $primary-color, 45%);
 $light-primary-color        : mix(#fff, $primary-color, 30%);
 $lighter-primary-color      : mix(#fff, $primary-color, 60%);
-$background                 : mix($primary-color, #121715, 5%);
-$background-light           : #1a1a1a;
-$background-lighter         : #2a2a2a;
-$text                      : #eceae6;
-$text-muted                : #d9d9d9;
-$link                      : #93c5fd;
-$link-dark                 : #c6c5fe;
-$link-light                : #ff73fd;
-$footer                    : #121715;
-$border                    : #4d4d4d;
-$border-light              : #475569;
-$selection-bg              : #2d4a3e;
+$background                 : #1a1f1d;
+$background-light           : #222926;
+$background-lighter         : #2d3632;
+$text                      : #f1f3f2;
+$text-muted                : #9ca3af; 
+$link                      : #7da0d6;
+$link-dark                 : mix(#000, $link, 50%);
+$link-light                : mix(#fff, $link, 50%);
+
+$footer                    : $darker-primary-color;
+$border                    : #374151;
+$border-light              : mix(#000, $border, 60%);
+$selection-bg              : #3d5248;
 $selection-text            : #ffffff;
 
-$footer-top-bg             : #f8f9fa;
-$footer-top-text           : #6c757d;
-$footer-top-heading        : #343a40;
-$footer-top-link-hover     : #0056b3;
-
-$footer-bottom-bg          : #343a40;
-$footer-bottom-text        : #adb5bd;
-$footer-bottom-link-hover  : #ffffff;
 
 /* Color codes used for the site */
 $danger-color               : #ff6c60;
@@ -47,6 +40,8 @@ $navicon-height             : 4px;
 $sidebar-link-max-width     : 250px;
 $sidebar-screen-min-width   : 1024px;
 
+$logo-image-path            : "/images/echt_dark.png";
+
 /* Dark theme for the site */
 html[data-theme="dark"] {
   --global-base-color                 : #{$primary-color};
@@ -57,9 +52,9 @@ html[data-theme="dark"] {
   --global-code-background-color      : #{$background-light};
   --global-code-text-color            : #{$text-muted};
   --global-fig-caption-color          : #{$text-muted};
-  --global-link-color                 : #{$link};
-  --global-link-color-hover           : #{$link-dark};
-  --global-link-color-visited         : #{$link-light};
+  --global-link-color                 : #{$link-light};
+  --global-link-color-hover           : #{$link};
+  --global-link-color-visited         : #{$link-dark};
   --global-masthead-color             : #{$footer};
   --global-masthead-link-color        : #{$text};
   --global-masthead-link-color-hover  : #{$border};
@@ -69,13 +64,19 @@ html[data-theme="dark"] {
   --global-toc-bg-color               : #{$background-light};
   --global-selection-bg-color         : #{$selection-bg};
   --global-selection-text-color       : #{$selection-text};
+
+  --footer-text-color                 : #{$text};
+  --footer-link-color                 : #{$link-light};
+  --footer-link-color-hover           : #{$link};
+
   --footer-top-bg                     : #{$footer};
-  --footer-top-text                   : #{$text-muted};
+  --footer-top-text                   : #{$text};
   --footer-top-heading                : #{$text};
-  --footer-top-link-hover             : #{$link};
-  --footer-bottom-bg                  : #{$footer-bottom-bg};
-  --footer-bottom-text                : #{$footer-bottom-text};
-  --footer-bottom-link-hover          : #{$footer-bottom-link-hover};
+  --footer-top-link-hover             : #{$link-light};
+  --footer-bottom-bg                  : #{$footer};
+  --footer-bottom-text                : #{$text};
+  --footer-bottom-link-hover          : #{$link-light};
+  --global-logo-image                 : #{"url('" + $logo-image-path + "')"};
 }
 
 /* Text selection styling for dark theme */

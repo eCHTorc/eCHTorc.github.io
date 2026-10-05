@@ -24,15 +24,11 @@ The electronic Computational Homotopy Theory (eCHT) online research community sp
 </p>
 
 <ul>
-<li>Upcoming talks: September 24, October 22, November 19</li>
+<li>Upcoming talks: October 22, November 19</li>
 <li>The Meeting ID is 912 5922 4199 and may be accessed via <a href="https://virginia.zoom.us/j/91259224199?pwd=0hsMWunaLy5yFgZJOV3dDBiMcBx0pD.1
 ">this Zoom link</a>.
 Please contact us for the password.</li>
 </ul>
-
-<p><a href="/reading-seminars/">Reading Seminars</a>: None</p>
-<p><a href="/courses/">Courses</a>: None</p>
-<p><a href="/minicourses/">Upcoming mini-courses</a>: None</p>
   </div>
 
 <p>
