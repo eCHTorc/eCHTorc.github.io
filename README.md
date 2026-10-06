@@ -7,7 +7,6 @@ Last updated: September 2026 by Maxine Calle
 
 
 
-
 # Basic Info
 
 The website is based off of the "academic websites" template, which you can see more about here: https://academicpages.github.io/
