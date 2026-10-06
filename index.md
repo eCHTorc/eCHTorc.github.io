@@ -29,6 +29,17 @@ The electronic Computational Homotopy Theory (eCHT) online research community sp
 ">this Zoom link</a>.
 Please contact us for the password.</li>
 </ul>
+
+<p>
+Online Office Hours: Friday 16 October at 11:00am eastern time, Cary Malkiewich (Binghamton University)
+<ul>
+<li>
+The Meeting ID is 972 5211 6735 and may be accessed via
+<a href="https://binghamton.zoom.us/j/97252116735?pwd=BIh7daLVD5zVExeaGfPBudfRRM777C.1">
+this Zoom link</a>.
+Please contact us for the password.</li>
+</ul>
+
   </div>
 
 <p>
