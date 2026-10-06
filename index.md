@@ -43,8 +43,6 @@ Please contact us for the password.</li>
 
 </div>
 
-Friendly
-
 <p>
 For more information, contact us at echtadmin [at] gmail [dot] com. Please subscribe to our <a href="https://lists.wayne.edu/cgi-bin/wa?SUBED1=ECHT&A=1"> mailing list</a> to be kept informed of all eCHT news and events. 
 </p>
