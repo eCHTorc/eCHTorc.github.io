@@ -1,0 +1,58 @@
+/* Shared appearance for every page. Edit this file and refresh; no build needed. */
+:root { color-scheme: light; --ink: #26323b; --muted: #58646d; --link: #245b83; --line: #dce3e7; --paper: #f4f7f9; }
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; background: #fff; color: var(--ink); font: 17px/1.65 system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+a { color: var(--link); text-underline-offset: .16em; }
+a:hover { color: #123950; }
+a:focus-visible { outline: 3px solid #d28b32; outline-offset: 4px; }
+.sidebar { position: fixed; inset: 0 auto 0 0; width: 255px; padding: 32px 25px; background: var(--paper); border-right: 1px solid var(--line); overflow-y: auto; }
+.brand { display: block; }
+.brand img { width: 160px; max-width: 100%; height: auto; }
+.tagline { color: var(--muted); font-size: .82rem; line-height: 1.5; margin: 16px 0 28px; }
+nav ul { padding: 0; margin: 0; list-style: none; }
+nav a { display: block; padding: 9px 0; border-bottom: 1px solid var(--line); font-size: .93rem; text-decoration: none; }
+nav a[aria-current="page"] { color: var(--ink); font-weight: 700; }
+.site-content { max-width: 1390px; margin-left: 255px; padding: 42px clamp(25px, 5vw, 75px) 24px; }
+main { max-width: 1000px; min-height: 45vh; overflow-wrap: anywhere; }
+h1, h2, h3, h4 { line-height: 1.25; font-weight: 650; color: #1d303f; }
+h1 { font-size: clamp(1.7rem, 3vw, 2.25rem); margin: 0 0 24px; }
+h2 { font-size: 1.4rem; margin: 32px 0 16px; }
+h3 { font-size: 1.15rem; margin: 26px 0 12px; }
+p { margin: 0 0 18px; }
+li { margin: 5px 0; }
+hr { border: 0; border-top: 1px solid var(--line); margin: 25px 0; }
+img { max-width: 100%; height: auto; }
+.abstract-box { padding: 22px 25px; background: var(--paper); border-left: 3px solid #5b829e; margin: 26px 0; }
+.abstract-box > :last-child { margin-bottom: 0; }
+.table-scroll { overflow-x: auto; margin: 18px 0; }
+table { border-collapse: collapse; width: 100%; font-size: .95rem; }
+th, td { text-align: left; vertical-align: top; border-bottom: 1px solid var(--line); padding: 12px 14px; }
+th { background: var(--paper); }
+.talk-table { margin: 0; }
+.talk-table td { border: 0; padding: 10px 0; }
+.talk-title { width: 70%; }
+.talk-date { width: 30%; padding-left: 24px !important; color: var(--muted); }
+.mini-columns { display: flex; flex-wrap: wrap; gap: 28px; }
+.column { flex: 1 1 280px; }
+.btn { display: block; margin: 18px 0; padding: 18px; background: var(--paper); border: 1px solid var(--line); }
+.btn-title { font-weight: 650; }
+.site-footer { margin-top: 55px; padding-top: 24px; border-top: 1px solid var(--line); font-size: .82rem; color: var(--muted); }
+.footer-columns { display: flex; flex-wrap: wrap; gap: 24px 50px; }
+.footer-columns > div { flex: 1 1 220px; }
+.site-footer h2 { font-size: .9rem; margin: 0 0 10px; }
+.site-footer ul { padding-left: 18px; }
+.skip-link { position: fixed; top: -100px; left: 15px; background: #fff; padding: 10px; z-index: 10; }
+.skip-link:focus { top: 10px; }
+@media (max-width: 760px) {
+  .sidebar { position: static; width: auto; padding: 20px 24px; border-right: 0; border-bottom: 1px solid var(--line); }
+  .brand img { width: 115px; }
+  .tagline { margin: 8px 0 16px; }
+  .tagline br { display: none; }
+  nav ul { display: flex; flex-wrap: wrap; gap: 4px 18px; }
+  nav a { padding: 5px 0; font-size: .85rem; }
+  .site-content { margin-left: 0; padding: 28px 22px; }
+  .talk-table, .talk-table tbody, .talk-table tr, .talk-table td { display: block; width: 100%; }
+  .talk-date { padding-left: 0 !important; }
+}
+@media print { .sidebar, .skip-link, .site-footer { display: none; } .site-content { margin: 0; padding: 0; } }

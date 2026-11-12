@@ -1,98 +1,110 @@
-# eCHT online research community
+# eCHT — editable static website
 
-This file contains information about the eCHT website and how to edit it. It's written as more of a "user's guide" than a technical document.
+This is a plain HTML and CSS version of https://echtorc.github.io, converted on November 11, 2026. No Jekyll, Ruby, npm, templates, or build command is required. All 51 source content pages, their text, 65 legacy URLs, and the original files and images are retained. Dates and event information are preserved as written in the source.
 
-Last updated: September 2026 by Maxine Calle
+## Preview on your computer
 
+Open Terminal and run:
 
+```sh
+cd ~/Desktop/echtorc-static
+ipython -m http.server 8000
+```
 
+Visit http://localhost:8000/ in your browser. Leave Terminal running. After editing and saving a file, refresh the browser. If a CSS change does not appear, do a hard refresh (Command-Shift-R). Stop the server with Control-C.
 
-# Basic Info
+If IPython is unavailable, `python3 -m http.server 8000` works too. Start the server in this folder, where `index.html` is located. Links beginning with `/` refer to this server's root; opening the HTML files directly with `file://` is not the intended preview method.
 
-The website is based off of the "academic websites" template, which you can see more about here: https://academicpages.github.io/
+## Edit content
 
-The template has been heavily edited for this website, but the basic contents of the repository are the same. In particular, you can follow the instructions they give to run the website locally. 
+Open the HTML file in any text editor. Find the comment `EDIT PAGE CONTENT BELOW` and edit the HTML inside `<main id="content">`. Save and refresh; there is no generation step.
 
+| What to change | File |
+| --- | --- |
+| Home page and current activities | `index.html` |
+| Research talks and abstracts | `research-seminar/index.html` |
+| Reading seminar list | `reading-seminars/index.html` |
+| Course list | `courses/index.html` |
+| Minicourses | `minicourses/index.html` |
+| About us | `who-we-are/index.html` |
+| Code of conduct | `code-of-conduct/index.html` |
+| Dormant activities | `dormant-activities/index.html` |
+| Fonts, colors, spacing, responsive layout | `styles.css` |
+| PDFs and other downloadable materials | `files/` |
+| Logos and icons | `images/` |
 
-## Files and folders
+Individual course and seminar pages have their own folders. A complete file list appears below. The content is directly in each HTML file, including all research talk schedules; there are no separate data files to rebuild.
 
-1. _config.yml contains settings that affect the entire site, like the url and site title. Aside from the basic site settings, everything is blank.
+To add a talk, copy an existing talk's table and accompanying abstract within `research-seminar/index.html`, then edit the copied text and links. To add a page, copy an existing content folder, update its title and main content, and link to it from the relevant list page.
 
-2. _data > navigation.yml has the various navigation menus that appear on the site. The main menu (which would appear horizontally at the top of the site) is currently blank; left_nav is the menu that appears in the left sidebar.
+Navigation and footer markup are repeated in each page so the site needs no JavaScript or HTML includes for its content. To change the global navigation or footer, use your editor's Find and Replace across the HTML files. Files containing only “Page moved” preserve old URLs; edit the destination page instead.
 
-3. _includes has the different html files used to build the site. More on that below.
+## Put it on GitHub Pages
 
-4. _layouts has different html files for page layout templates. I've only used "default" throughout the site, but you could get fancier if you want to.
+Back up your existing repository first. Replace the old website source with the contents of this folder, including the hidden `.nojekyll` file. Do not put the whole folder inside the repository; `index.html` should be at the repository root.
 
-5. _pages has the different html files that correspond to actual pages that make up the website. More on that below.
+Remove the old Jekyll files and directories (such as `_config.yml`, `_pages`, `_layouts`, `_includes`, `_sass`, `_site`, `.sass-cache`, `Gemfile`, and `Gemfile.lock`). Keep repository administration files you still need. If you have a custom GitHub Actions workflow that explicitly builds Jekyll, disable it or replace it with a static Pages deployment. In the simplest setup, select “Deploy from a branch” under Settings → Pages and choose your branch and its root folder. `.nojekyll` tells Pages to serve these files directly.
 
-6. _sass has scss files that customize how things look on the website. More on that below.
+This conversion has not changed or published anything to GitHub.
 
-7. _site I think is automatically generated? I never touch anything in here.
+## Conversion and checks
 
-8. _assets was included in the template. I never touch anything in here.
+The layout uses a shared stylesheet, a responsive sidebar, and plain HTML pages. No framework, remote font, or script is needed for normal page content or navigation. Small scripts on legacy redirect pages preserve query strings and URL fragments; those pages also have an HTML refresh and a clickable fallback link.
 
-9. files contains all the pdfs that are linked in the website, e.g. talk notes and slides.
+The text of every converted content page was compared with its source. All copied downloads and images were checked for byte-for-byte equality. All local HTML links and asset references resolve. Three archived PDF links were corrected to existing `.pdf` filenames, and one archived Zoom link was given its missing `https://` prefix. External resources (such as YouTube, Zoom, mailing lists, and linked third-party notes) still need internet access and were not exhaustively checked.
 
-10. Gemfile and Gemfile.lock are there to help you run the site locally with Jekyll.
+## All content files
 
-11. images contains all the images used on the website, e.g. the logo and favicon.
-
-12. index.md is the markdown file for the homepage of the website.
-
-13. README.md is this file :)
-
-
-
-
-
-
-#Editing the website
-
-
-
-## How to make a new page
-
-Let's say you want to make a new page on the website, for a Course on Topic X. What should you do?
-
-The easiest thing to do is to go to _pages > courses and make a copy of one of the html files there. You should then change the file name to be something like 'course-on-topic-x-date' (e.g. 'course-on-stable-homotopy-theory-fall-26'). 
-
-When you open the html file, you should edit the top to look something like this:
-
----
-permalink: /course-on-topic-x-date/
-title: "eCHT Course on X"
-redirect_from: 
-  - "/course-on-topic-X.html"
-layout: default
-sidebar:
-  nav: "left_nav"
----
-
-It's important that this block is surrounded on either side by "---". The first line says what the url for the page should be, in this case, it will be accessible at https://echtorc.github.io/course-on-topic-x-date/. Also, if you want to link to this webpage from another page, you'd say <a href="/course-on-topic-x-date/">hyperlink text</a> (versus <a href="https://echtorc.github.io/course-on-topic-x-date/">hyperlink text</a>). 
-
-Now, the rest of the page can be edited with html, and the whole thing should be encased in
-
-<div class="page">
-...(content)...
-</div>
-
-If you've copy-pasted the html file from a pre-existing one, the basic layout should already be there and you can just edit the text as you wish. You can also copy-paste other elements from different html files in the _pages folder, if you see something you like on another page.
-
-
-
-## How to make things look different
-
-If you want to change the aesthetics of the website, or add new elements, there are two folders that you should go to: _includes and _sass. The former contains the html files for the basic aspects of the website (e.g. footer, header, masthead, sidebar) and the latter contains the scss files that govern how these things look.
-
-Here are the most basic things you might want to edit:
-
-- Colors, fonts, etc: Go to _sass. The files _syntax.scss and _themes.scss govern things like typography. If you go to the folder theme, you'll find different scss files that govern the colors for the website. Currently the one that's used is _contrast (both light and dark, depending on what the user's computer dictates. There is an option to make light/dark mode "toggle" (see the masthead files) but it's not currently in use). 
-
-- Buttons, lists, the sidebar menu, footer, etc: Go to _sass > layout. The files in here govern how specific elements of the website look. For example, say you wanted to change what happens when you hover over a link in the sidebar. You should go to the file _navigation.scss (it might be worth looking in _sidebar.scss as well) and edit the code in the "Navigation list" section.
-
-
-
-## I'm confused, help!
-
-Yeah, honestly, the best advice I can give is to poke around in the other files and try different things to see what works. Google is also pretty good for basic html things, and probably AI / LLMs are much better at anything coding-related than I am. But you can also always reach out to me (Maxine Calle) and I can do my best to help. You've got this!
+| Page | Editable file |
+| --- | --- |
+| eCHT (/) | `index.html` |
+| eCHT Course on homology and cohomology (/course-on-algebraic-topology-homology-and-cohomology-winter-23/) | `course-on-algebraic-topology-homology-and-cohomology-winter-23/index.html` |
+| eCHT Course on stable homotopy theory (/course-on-algebraic-topology-homotopy-theory-winter-24/) | `course-on-algebraic-topology-homotopy-theory-winter-24/index.html` |
+| eCHT Course on duality and spectra (/course-on-duality-and-spectra-fall-24/) | `course-on-duality-and-spectra-fall-24/index.html` |
+| eCHT Course on stable homotopy theory (/course-on-stable-homotopy-theory-winter-24/) | `course-on-stable-homotopy-theory-winter-24/index.html` |
+| eCHT Course on stable homotopy theory (/course-on-stable-homotopy-theory-winter-25/) | `course-on-stable-homotopy-theory-winter-25/index.html` |
+| eCHT Course on stable homotopy theory (/course-on-stable-homotopy-theory-winter-26/) | `course-on-stable-homotopy-theory-winter-26/index.html` |
+| eCHT Course on stable homotopy theory (/course-on-stable-homotopy-theory/) | `course-on-stable-homotopy-theory/index.html` |
+| eCHT Course on stable homotopy theory (/course-on-topological-k-theory-winter-23/) | `course-on-topological-k-theory-winter-23/index.html` |
+| Professional Development (/professional-development/) | `professional-development/index.html` |
+| Research Experience for Undergraduates Summer 2023 (/reu-summer-23/) | `reu-summer-23/index.html` |
+| Research Experience for Undergraduates Summer 2024 (/reu-summer-24/) | `reu-summer-24/index.html` |
+| eCHT Research Seminar Reading Group (/research-seminar-reading-group/) | `research-seminar-reading-group/index.html` |
+| Seminar on Machine Computation (/seminar-machine-computation/) | `seminar-machine-computation/index.html` |
+| Employment Network Fall 2020 (/network-fall-20/) | `network-fall-20/index.html` |
+| Employment Network Fall 2022 (/network-fall-22/) | `network-fall-22/index.html` |
+| Code of Conduct (/code-of-conduct/) | `code-of-conduct/index.html` |
+| eCHT Courses (/courses/) | `courses/index.html` |
+| Dormant Activities (/dormant-activities/) | `dormant-activities/index.html` |
+| eCHT Minicourses (/minicourses/) | `minicourses/index.html` |
+| eCHT Reading Seminars (/reading-seminars/) | `reading-seminars/index.html` |
+| Funding Reports (/reports/) | `reports/index.html` |
+| eCHT Research Seminar (/research-seminar/) | `research-seminar/index.html` |
+| Research Workshops (/research-workshops/) | `research-workshops/index.html` |
+| eCHT Kan Seminar (/kan-seminar-fall-19/) | `kan-seminar-fall-19/index.html` |
+| eCHT Kan Seminar (/kan-seminar-fall-20/) | `kan-seminar-fall-20/index.html` |
+| eCHT Kan Seminar (/kan-seminar-fall-22/) | `kan-seminar-fall-22/index.html` |
+| eCHT Kan Seminar (/kan-seminar-fall-23/) | `kan-seminar-fall-23/index.html` |
+| eCHT Kan Seminar (/kan-seminar-fall-24/) | `kan-seminar-fall-24/index.html` |
+| eCHT Kan Seminar (/kan-seminar-fall-25/) | `kan-seminar-fall-25/index.html` |
+| eCHT Kan Seminar (/kan-seminar-winter-22/) | `kan-seminar-winter-22/index.html` |
+| eCHT Kan Seminar (/kan-seminar-winter-25/) | `kan-seminar-winter-25/index.html` |
+| eCHT Reading Seminar on the Adams Spectral Sequence for Topological Modular Forms (/reading-seminar-on-adams-spectral-sequence-for-topological-modular-forms-winter-23/) | `reading-seminar-on-adams-spectral-sequence-for-topological-modular-forms-winter-23/index.html` |
+| eCHT Reading Seminar on Algebraic K-theory (/reading-seminar-on-algebraic-k-theory-fall-20/) | `reading-seminar-on-algebraic-k-theory-fall-20/index.html` |
+| eCHT Reading Seminar on Algebraic Vector Bundles (/reading-seminar-on-algebraic-vector-bundles-fall-23/) | `reading-seminar-on-algebraic-vector-bundles-fall-23/index.html` |
+| eCHT Reading Seminar on Commutative Ring Spectra (/reading-seminar-on-commutative-ring-spectra-winter-21/) | `reading-seminar-on-commutative-ring-spectra-winter-21/index.html` |
+| eCHT Reading Seminar on Equivariant Algebra (/reading-seminar-on-equivariant-algebra-winter-21/) | `reading-seminar-on-equivariant-algebra-winter-21/index.html` |
+| eCHT Reading Seminar on Equivariant Homotopy Theory (/reading-seminar-on-equivariant-homotopy-theory-fall-21/) | `reading-seminar-on-equivariant-homotopy-theory-fall-21/index.html` |
+| eCHT Reading Seminar on the Adams Spectral Sequence for Topological Modular Forms (/reading-seminar-on-floer-homotopy-theory-winter-22/) | `reading-seminar-on-floer-homotopy-theory-winter-22/index.html` |
+| eCHT Reading Seminar on Equivariant Homotopy Theory (/reading-seminar-on-foundations-of-hermitian-k-theory-fall-21/) | `reading-seminar-on-foundations-of-hermitian-k-theory-fall-21/index.html` |
+| eCHT Reading Seminar on Group Actions on Exotic Spheres (/reading-seminar-on-group-actions-on-exotic-spheres-winter-26/) | `reading-seminar-on-group-actions-on-exotic-spheres-winter-26/index.html` |
+| eCHT Reading Seminar on Homotopical Combinatorics (/reading-seminar-on-homotopical-combinatorics-winter-25/) | `reading-seminar-on-homotopical-combinatorics-winter-25/index.html` |
+| eCHT Reading Seminar on Hopf Rings (/reading-seminar-on-hopf-rings-winter-24/) | `reading-seminar-on-hopf-rings-winter-24/index.html` |
+| eCHT Reading Seminar on Kervaire Invariant One (/reading-seminar-on-kervaire-invariant-one-fall-20/) | `reading-seminar-on-kervaire-invariant-one-fall-20/index.html` |
+| eCHT Reading Seminar on the Adams Spectral Sequence for Topological Modular Forms (/reading-seminar-on-mahowald-invariant-fall-22/) | `reading-seminar-on-mahowald-invariant-fall-22/index.html` |
+| eCHT Reading Seminar on Motives (/reading-seminar-on-motives-spring-20/) | `reading-seminar-on-motives-spring-20/index.html` |
+| eCHT Reading Seminar on Quadratic Curve Counting (/reading-seminar-on-quadratic-curve-counting-fall-24/) | `reading-seminar-on-quadratic-curve-counting-fall-24/index.html` |
+| eCHT Reading Seminar on Group Actions on Exotic Spheres (/reading-seminar-on-secondary-steenrod-algebra-fall-25/) | `reading-seminar-on-secondary-steenrod-algebra-fall-25/index.html` |
+| eCHT Reading Seminar on Synthetic Spectra (/reading-seminar-on-synthetic-spectra-winter-22/) | `reading-seminar-on-synthetic-spectra-winter-22/index.html` |
+| eCHT Reading Seminar on Topological Hochschild Homology (/reading-seminar-on-topological-hochschild-homology-spring-20/) | `reading-seminar-on-topological-hochschild-homology-spring-20/index.html` |
+| About eCHT (/who-we-are/) | `who-we-are/index.html` |
